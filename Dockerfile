@@ -1,4 +1,4 @@
-FROM node:lts-alpine3.13 as node-angular-cli
+FROM node:lts-alpine as node-angular-cli
 
 LABEL authors="Stanley Omoregie"
 
