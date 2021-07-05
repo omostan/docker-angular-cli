@@ -1,4 +1,4 @@
-FROM node:lts-alpine as node-angular-cli
+FROM node:latest as node-angular-cli
 
 LABEL authors="Stanley Omoregie"
 
@@ -11,4 +11,4 @@ RUN apk update \
   && sed -i -e "s/bin\/ash/bin\/sh/" /etc/passwd
 
 #Angular CLI
-RUN npm install -g @angular/cli@12.1.0
+RUN npm install -g @angular/cli@latest
